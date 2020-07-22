@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProPlaner.Services;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,7 +11,10 @@ namespace ProPlaner
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            //MainPage = new MainPage();
+            DependencyService.Register<MockPPTaskStore>();
+            DependencyService.Register<MockPPAreaStore>();
+            MainPage = new AppShell();
         }
 
         protected override void OnStart()

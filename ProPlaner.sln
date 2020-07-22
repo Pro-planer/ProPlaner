@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProPlaner.Android", "ProPla
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProPlaner.iOS", "ProPlaner.iOS\ProPlaner.iOS.csproj", "{94352BFA-2737-4CBB-A297-5132150CFA00}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProPlaner", "ProPlaner\ProPlaner.csproj", "{302DFC82-9EC8-46FA-8E2A-ADF0DF030883}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProPlaner", "ProPlaner\ProPlaner.csproj", "{302DFC82-9EC8-46FA-8E2A-ADF0DF030883}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,8 +28,6 @@ Global
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{214EFD84-19E7-4331-A4BB-B2FE34E284E5}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{214EFD84-19E7-4331-A4BB-B2FE34E284E5}.Debug|Any CPU.Build.0 = Debug|x86
-		{214EFD84-19E7-4331-A4BB-B2FE34E284E5}.Debug|Any CPU.Deploy.0 = Debug|x86
 		{214EFD84-19E7-4331-A4BB-B2FE34E284E5}.Debug|ARM.ActiveCfg = Debug|ARM
 		{214EFD84-19E7-4331-A4BB-B2FE34E284E5}.Debug|ARM.Build.0 = Debug|ARM
 		{214EFD84-19E7-4331-A4BB-B2FE34E284E5}.Debug|ARM.Deploy.0 = Debug|ARM
@@ -100,8 +98,6 @@ Global
 		{5777368B-0CB8-417B-B00B-9CDD6D37884E}.Release|x86.Build.0 = Release|Any CPU
 		{5777368B-0CB8-417B-B00B-9CDD6D37884E}.Release|x86.Deploy.0 = Release|Any CPU
 		{94352BFA-2737-4CBB-A297-5132150CFA00}.Debug|Any CPU.ActiveCfg = Debug|iPhone
-		{94352BFA-2737-4CBB-A297-5132150CFA00}.Debug|Any CPU.Build.0 = Debug|iPhone
-		{94352BFA-2737-4CBB-A297-5132150CFA00}.Debug|Any CPU.Deploy.0 = Debug|iPhone
 		{94352BFA-2737-4CBB-A297-5132150CFA00}.Debug|ARM.ActiveCfg = Debug|iPhone
 		{94352BFA-2737-4CBB-A297-5132150CFA00}.Debug|ARM.Build.0 = Debug|iPhone
 		{94352BFA-2737-4CBB-A297-5132150CFA00}.Debug|ARM.Deploy.0 = Debug|iPhone
