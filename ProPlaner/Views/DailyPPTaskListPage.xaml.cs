@@ -30,6 +30,7 @@ namespace ProPlaner.Views
             var layout = (BindableObject)sender;
             var item = (PPTask)layout.BindingContext;
             await Navigation.PushAsync(new PPTaskDetailPage(new PPTaskDetailViewModel(item)));
+            //await Navigation.PushModalAsync(new NavigationPage(new PPTaskDetailPage(new PPTaskDetailViewModel(item))));
         }
 
         async void AddItem_Clicked(object sender, EventArgs e)
