@@ -21,7 +21,7 @@ namespace ProPlaner.ViewModels
 
         public DailyPPTaskListViewModel()
         {
-            Title = "Browse";
+            Title = "Daily Tasks (23 July 2020)";
             Items = new ObservableCollection<PPTask>();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
 

@@ -9,7 +9,7 @@
              x:Name="DailyTaskListPage">
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Add" Clicked="AddItem_Clicked" />
+        <ToolbarItem Text="Add Task" Clicked="AddItem_Clicked" />
     </ContentPage.ToolbarItems>
 
     <RefreshView IsRefreshing="{Binding IsBusy, Mode=TwoWay}" Command="{Binding LoadItemsCommand}">
@@ -27,7 +27,7 @@
             </d:CollectionView.ItemsSource>
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <StackLayout Padding="10">
+                    <!--<StackLayout Padding="10">
                         <Label Text="{Binding DateTime}" 
                                 d:Text="{Binding .}"
                                 LineBreakMode="NoWrap" 
@@ -56,7 +56,52 @@
                         <StackLayout.GestureRecognizers>
                             <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="OnItemSelected"></TapGestureRecognizer>
                         </StackLayout.GestureRecognizers>
-                    </StackLayout>
+                    </StackLayout>-->
+                    <Grid Padding="5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="19" />
+                            <RowDefinition Height="16" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="6"/>
+                            <ColumnDefinition Width="70"/>
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <BoxView Grid.RowSpan="2" Grid.Column="0" Color="{Binding Color}" Margin="1,2,1,2"/>
+
+                        <Label 
+                            Grid.Row="0" Grid.Column="1"
+                            Text="{Binding DateTime}" 
+                                d:Text="{Binding .}"
+                                LineBreakMode="NoWrap" 
+                                Style="{DynamicResource ListItemTextStyle}" 
+                                FontSize="16" />
+
+                        <Label 
+                            Grid.Row="0" Grid.Column="2"
+                            Text="{Binding Name}" 
+                                d:Text="{Binding .}"
+                                LineBreakMode="NoWrap" 
+                                Style="{DynamicResource ListItemTextStyle}" 
+                                FontSize="16" />
+                        <Label 
+                            Grid.Row="1" Grid.Column="2"
+                            Text="{Binding Description}" 
+                                d:Text="Descripton"
+                                LineBreakMode="NoWrap"
+                                Style="{DynamicResource ListItemDetailTextStyle}"
+                                FontSize="13" />
+
+                        <Label 
+                            Grid.Row="1" Grid.Column="1"
+                            Text="{Binding AreaId}" 
+                                d:Text="Area"
+                                LineBreakMode="NoWrap"
+                                Style="{DynamicResource ListItemDetailTextStyle}"
+                                FontSize="13" />
+
+                    </Grid>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>

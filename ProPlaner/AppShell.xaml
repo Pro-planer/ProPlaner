@@ -34,8 +34,14 @@
         <Tab Title="Daily Tasks" Icon="tab_dailytasklist.png">
             <ShellContent ContentTemplate="{DataTemplate local:DailyPPTaskListPage}" />
         </Tab>
-        <Tab Title="New Task" Icon="tab_addnewtask.png">
-            <ShellContent ContentTemplate="{DataTemplate local:PPTaskDetailPage}" />
+        <Tab Title="Calendar" Icon="tab_calendar.png">
+            <ShellContent ContentTemplate="{DataTemplate local:CalendarPage}" />
+        </Tab>
+        <Tab Title="Area" Icon="tab_area.png">
+            <ShellContent ContentTemplate="{DataTemplate local:PPAreaListPage}" />
+        </Tab>
+        <Tab Title="Statistics" Icon="tab_statistics.png">
+            <ShellContent ContentTemplate="{DataTemplate local:StatisticsPage}" />
         </Tab>
     </TabBar>
 

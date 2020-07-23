@@ -14,12 +14,12 @@ namespace ProPlaner.Services
         {
             items = new List<PPTask>()
             {
-               /* new Item { Id = Guid.NewGuid().ToString(), Text = "First item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Second item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Third item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Fourth item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Fifth item", Description="This is an item description." },*/
-                new PPTask { Id = Guid.NewGuid().ToString(), DateTime = "18:30 22.07.2020", Name="Тренировка в зале", Description="Сушка", TaskType = PPTaskType.Nonurgent_Important, AreaId = "Спорт" }
+                new PPTask { Id = Guid.NewGuid().ToString(), DateTime = "8:30", Name="Подъем, завтрак", Description="", TaskType = PPTaskType.None, AreaId = "Моцион" },
+                new PPTask { Id = Guid.NewGuid().ToString(), DateTime = "10:00", Name="Сходить в магазин за подарком к маме", Description="Выбрать духи", TaskType = PPTaskType.Urgent_Important, AreaId = "Семья" },
+                new PPTask { Id = Guid.NewGuid().ToString(), DateTime = "12:30", Name="Встреча с Николаем", Description="Обсудить планы на каникулы", TaskType = PPTaskType.NonUrgent_Unimportant, AreaId = "Друзья" },
+                new PPTask { Id = Guid.NewGuid().ToString(), DateTime = "15:30", Name="Тренировка в зале", Description="Сушка", TaskType = PPTaskType.Nonurgent_Important, AreaId = "Спорт" },
+                new PPTask { Id = Guid.NewGuid().ToString(), DateTime = "18:30", Name="Сходить в магазин с Ваней", Description="Помочь выбрать кроссовки", TaskType = PPTaskType.Urgent_Unimportant, AreaId = "Друзья" },
+                new PPTask { Id = Guid.NewGuid().ToString(), DateTime = "19:00", Name="День рождения у мамы", Description="Семейное торжество", TaskType = PPTaskType.Nonurgent_Important, AreaId = "Семья" },
             };
         }
 
