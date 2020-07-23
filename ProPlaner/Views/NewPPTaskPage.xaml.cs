@@ -18,6 +18,19 @@ namespace ProPlaner.Views
         public NewPPTaskPage()
         {
             InitializeComponent();
+
+            NewTask = new PPTask
+            {
+                Id = Guid.NewGuid().ToString(),
+                DateTime = DateTime.Now.ToString(),
+                Name = "New Task",
+                Description = "",
+                TaskType = PPTaskType.None,
+                AreaId = ""
+            };
+
+
+            BindingContext = this;
         }
 
         async void Save_Clicked(object sender, EventArgs e)

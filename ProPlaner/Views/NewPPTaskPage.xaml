@@ -5,7 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="ProPlaner.Views.NewPPTaskPage"
-             Title="{Binding Title}"
+             Title="New Task"
              >
 
     <ContentPage.ToolbarItems>
@@ -21,10 +21,16 @@
         </StackLayout>-->
 
         <StackLayout Spacing="20" Padding="15">
-            <Label Text="Text" FontSize="Medium" />
-            <Entry Text="{Binding Item.Text}" d:Text="Item name" FontSize="Small" />
+            <Label Text="Date and Time" FontSize="Medium" />
+            <Entry Text="{Binding NewTask.DateTime}" d:Text="date and time" FontSize="Small" />
+            <Label Text="Name" FontSize="Medium" />
+            <Editor Text="{Binding NewTask.Description}" d:Text="name" FontSize="Small" Margin="0" />
             <Label Text="Description" FontSize="Medium" />
-            <Editor Text="{Binding Item.Description}" d:Text="Item description" FontSize="Small" Margin="0" />
+            <Editor Text="{Binding NewTask.Description}" d:Text="description" FontSize="Small" Margin="0" />
+            <Label Text="Task type" FontSize="Medium" />
+            <Editor Text="{Binding NewTask.TaskType}" d:Text="task type" FontSize="Small" Margin="0" />
+            <Label Text="Area" FontSize="Medium" />
+            <Editor Text="{Binding NewTask.AreaId}" d:Text="area" FontSize="Small" Margin="0" />
         </StackLayout>
 
     </ContentPage.Content>
